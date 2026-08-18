@@ -1,0 +1,164 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+  a,
+  label,
+  #title,
+  #welcome_content > section,
+  #welcome_content > section > button,
+  #donor_content,
+  form > button:hover,
+  #table_content {
+	color: white;
+  }
+  a,
+  label {
+	text-decoration: none;
+	font: italic 600 22px "Roboto", monospace;
+  }
+  body {
+	width: 100%;
+	background: url("/images/ph1.jpg");
+  }
+  #title {
+	font: italic 300 24px "Permanent Marker";
+  }
+  .container > * {
+	background: transparent;
+  }
+  .container {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-template-rows: 70px repeat(13, 100px) 70px;
+	grid-template-areas:
+	  "nav nav nav nav nav nav nav nav nav nav"
+	  "aside aside welcome welcome welcome welcome welcome welcome welcome welcome"
+	  "aside aside welcome welcome welcome welcome welcome welcome welcome welcome"
+	  "aside aside welcome welcome welcome welcome welcome welcome welcome welcome"
+	  "aside aside welcome welcome welcome welcome welcome welcome welcome welcome"
+	  "aside aside welcome welcome welcome welcome welcome welcome welcome welcome"
+	  "aside aside table table table table table table table table"
+	  "aside aside table table table table table table table table"
+	  "aside aside table table table table table table table table"
+	  "aside aside table table table table table table table table"
+	  "aside aside table table table table table table table table"
+	  "aside aside donate donate donate donate donate donate donate donate"
+	  "aside aside form form form form form form form form"
+	  "aside aside form form form form form form form form"
+	  "footer footer footer footer footer footer footer footer footer footer";
+  }
+  nav,
+  footer,
+  aside,
+  form,
+  #welcome_content,
+  #table_content,
+  #visual_content {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+  }
+  nav,
+  #welcome_content,
+  #table_content,
+  #visual_content {
+	border-bottom: 1px solid white;
+  }
+  nav {
+	grid-area: nav;
+  }
+  aside {
+	grid-area: aside;
+	flex-direction: column;
+	border-right: 1px dashed white;
+  }
+  #welcome_content {
+	text-align: center;
+	grid-area: welcome;
+	flex-direction: column;
+  }
+  #welcome_content > section {
+	width: 70%;
+	height: 41%;
+	font: normal 600 18px "Pacifico", cursive;
+	padding: 20px;
+  }
+  #table_content {
+	grid-area: table;
+	font: normal 700 20px "Pacifico", cursive;
+  }
+  #table_content > div {
+	width: 45%;
+  }
+  #iupac,
+  #illustr {
+	width: 100%;
+  }
+  #illustr {
+	background-size: cover;
+  }
+  #donor_content {
+	grid-area: donate;
+	font: normal 400 18px "Chakra Petch", sans-serif;
+	text-align: center;
+	padding-top: 50px;
+  }
+  form {
+	grid-area: form;
+	justify-content: space-evenly;
+  }
+  form > input {
+	width: 250px;
+	font-size: larger;
+  }
+  form > input:focus {
+	background-color: wheat;
+  }
+  form > input,
+  button {
+	border-radius: 22px;
+	height: 50px;
+  }
+  form > button > i {
+	font-size: x-large;
+  }
+  form > button {
+	width: 100px;
+	animation: changeBack 10s linear 0.5s infinite normal forwards;
+	color: white;
+  }
+  footer {
+	grid-area: footer;
+	border-top: 1px solid white;
+  }
+  footer section:hover {
+	transform: translateY(-5px);
+	transition: 0.73s ease-out;
+  }
+  footer section:not(:hover) {
+	transform: translateY(5px);
+	transition: 0.59s ease-out;
+  }
+  @keyframes changeBack {
+	0%,
+	100% {
+	  background-color: red;
+	}
+	20% {
+	  background-color: orange;
+	}
+	40% {
+	  background-color: green;
+	}
+	60% {
+	  background-color: blue;
+	}
+	80% {
+	  background-color: indigo;
+	}
+  }

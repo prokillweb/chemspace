@@ -1,0 +1,64 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow-x: hidden;
+	color: white;
+	font-style: italic;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image: url("/images/ph3.jpg");
+	background-size: cover;
+}
+#title, #foot {
+	width: 90%;
+	height: 10vh;
+	text-align: center;
+	padding-top: 10px;
+}
+.properties {
+	width: 90%;
+	height: 100vh;
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+}
+.group {
+	border: 5px solid transparent;
+	border-radius: 20px;	
+	font-size: 1.1rem;
+	cursor:cell;
+	h2 {
+		font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	}
+}
+.group1 {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+.group2 {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+.group13 {
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+}
+.group14 {
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+}
+.group15 {
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+}
+.group16{
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+}
+.group17 {
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+}
+.group18 {
+	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+}

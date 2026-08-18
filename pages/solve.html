@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chemistry Reaction Predicter</title>
+    <link rel="stylesheet" href="./../styles/solve.css" />
+    <link
+      rel="shortcut icon"
+      href="/images/favicon (2).ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Chemistry Reaction Predicter</h1>
+      <h2>
+          <em>Note: Third-party Reaction API retired (2024 Legacy Build)</em>
+      </h2>
+    </header>
+    <main>
+      <section class="input-section">
+        <h2>Enter your chemical reaction:</h2>
+        <form id="reaction-form">
+          <label for="reaction-input">Chemical Reaction:</label>
+          <input
+            type="text"
+            id="reaction-input"
+            name="reaction"
+            placeholder="e.g. H2 + O2 -> H2O, don't use single replacement rxns"
+          />
+          <button type="submit">Solve</button>
+        </form>
+      </section>
+      <section class="result-section">
+        <h2>Result:</h2>
+        <div id="result-display">
+        </div>
+      </section>
+    </main>
+    <script src="./../scripts/solve.js"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+	background: linear-gradient(rgba(131, 119, 119, 0), rgba(0, 0, 0, 0.7)),
+    url("/images/ph1.jpg");
+	overflow-x: hidden;
+	
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+}
+
+.mol-container {
+    width: 300px;
+    height: 300px;
+    /* display: inline-block; */
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}

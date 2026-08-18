@@ -1,0 +1,105 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow: hidden;
+	color: white;
+  }
+  body {
+	background-color:cadetblue;
+  }
+  .container_table {
+	width: 1350px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(18, 75px);
+	grid-template-rows: repeat(9, 75px);
+  }
+  .score_lose_bar {
+	grid-area: 2 / 3 / 4 / 13;
+	font-size: 30px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+  }
+  .info,
+  .elem {
+	font: italic 400 1.18rem "Trebuchet MS", "Lucida Sans Unicode",
+	  "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+	border-radius: 5px;
+  }
+  .elem,
+  .info,
+  .notes,
+  .features {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  .elem {
+	border: 1px solid white;
+	font-weight: 700;
+  }
+  .elem > input {
+	color: black;
+	height: 40px;
+	width: 40px;
+	border-radius: 5px;
+	font-size: 1.6rem;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+	  "Lucida Sans", Arial, sans-serif;
+  }
+  .elem:hover {
+	opacity: 0.7;
+  }
+  .alk {
+	background: red;
+  }
+  .alkert {
+	background: orange;
+  }
+  .nonmet {
+	background: green;
+  }
+  .other {
+	background: rgb(4, 146, 194);
+  }
+  .mtloid {
+	background: rgb(101, 42, 14);
+  }
+  .halo {
+	background: indigo;
+	grid-column: 17;
+  }
+  .noble {
+	background: darkblue;
+	grid-column: 18;
+  }
+  .trmet {
+	background: goldenrod;
+  }
+  .lant {
+	background: darkcyan;
+	grid-row: 8;
+  }
+  .actn {
+	background: darkmagenta;
+	grid-row: 9;
+  }
+  .new {
+	background: grey;
+  }
+  .elem5,
+  .elem13 {
+	grid-column: 13;
+  }
+  .info {
+	grid-area: 1 / 5 / 2 / 15;
+	font-size: 1.8rem;
+  }
+  .features {
+	grid-area: 8 / 15 / 10 / 19;
+	font: italic 700 1.4em "Franklin Gothic Medium", "Arial Narrow", Arial,
+	  sans-serif;
+  }
+  

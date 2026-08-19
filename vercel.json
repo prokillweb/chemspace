@@ -1,7 +1,6 @@
 {
   "cleanUrls": true,
   "rewrites": [
-    { "source": "/", "destination": "/pages/main.html" },
-    { "source": "/:path*", "destination": "/pages/:path*" }
+    { "source": "/", "destination": "/pages/main.html" }
   ]
 }
